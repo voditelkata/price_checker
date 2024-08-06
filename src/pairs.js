@@ -6,7 +6,7 @@ export const pairs = [
     },
     {
         priceCode: '6СТ-77А3(0)',
-        priceCodeFromBat: ['6CT-90VL 0'],
+        priceCodeFromBat: ['6CT-90VL 0', '560030000'],
         priceCodeFromRimbat: ['A070 141 09 0 R']
     },
     {
