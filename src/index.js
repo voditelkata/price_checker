@@ -21,7 +21,8 @@ try {
 
     const res = priceChecker.parse(fileAkamulik, fileBat, fileRimbat);
 
-    XlsFile.createFile(filename, res)
+    const columnWidth = [{ wch: 12 }, { wch: 35 }, { wch: 12 }, { wch: 35 }, { wch: 24 }, { wch: 10 }, { wch: 18 }, { wch: 35 }, { wch: 12 }, { wch: 10 }];
+    XlsFile.createFile(filename, res, columnWidth)
 
 } catch (error) {
     console.error('Something happens:', error);
