@@ -11,8 +11,8 @@ export default class PriceChecker {
                 return undefined;
             }
 
-            const productFromBat = item.productCodeFromBat && productsFromBat.find(product => product['Артикул'] ===  item.productCodeFromBat );
-            const productFromRimbat = item.productCodeFromRimbat &&  productsFromRimbat.find(product => product['Артикул'] === item.productCodeFromRimbat);
+            const productFromBat = item.productCodeFromBat && productsFromBat.find(product => product['Артикул']?.trim() ===  item.productCodeFromBat?.trim());
+            const productFromRimbat = item.productCodeFromRimbat &&  productsFromRimbat.find(product => product['Артикул']?.trim() === item.productCodeFromRimbat?.trim());
 
             return {
                 ...productFromAkum,
